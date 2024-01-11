@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrow/css/common.css" />
+    <script defer src="../../common_idigrow/js/jquery.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <span>다음 중 두 수를 골라 뺄셈식을 만들려고 합니다. 알맞은 수를 써넣으세요.</span>
+            </h1>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <!-- 단답유순 -->
+                <!-- tip -->
+                <div class="tip-box font-serif">
+                  <div class="qexample">297</div>
+                  <div class="qexample">376</div>
+                  <div class="qexample">604</div>
+                  <div class="qexample">673</div>
+                </div>
+                <div class="q-box font-serif"><input type="text" placeholder data-answer="673" />-<input type="text" placeholder data-answer="297" />=376</div>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">일의 자리의 차가 6이 되는 두 수를 찾은 다음 뺄셈식을 만들어 계산 결과가 같은지 확인해 봅니다.</div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse>
+                      <span class="font-serif">673, 297</span>
+                    </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    604-297=307, 673-297=376, 604-376=228, 673-376=297입니다.<br />
+                    따라서 376이 되는 뺄셈식은 673-297입니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>

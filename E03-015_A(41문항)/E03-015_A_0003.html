@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrow/css/common.css" />
+    <script defer src="../../common_idigrow/js/jquery.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="multipleChoice">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <span>지우개 8개를 2명이 똑같이 나누어 가지려고 합니다. 지우개를 한 명이 몇 개씩 가질 수 있는지 고르세요.</span>
+            </h1>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <ul class="list-choice font-serif">
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>①</b> 2개 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>②</b> 3개 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" data-answer="" />
+                      <span> <b>③</b> 4개 </span>
+                    </label>
+                  </li>
+                  <li class="split"></li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>④</b> 5개 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>⑤</b> 6개 </span>
+                    </label>
+                  </li>
+                </ul>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">○개를 □묶음으로 똑같이 나누면 한 묶음에 ☆개씩이 되는 것을 나눗셈식으로 나타내면 ○÷□=☆입니다.</div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse>
+                      <span class="font-serif">③</span>
+                    </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    지우개 8개를 2명이 똑같이 나누어 가지면 8÷2=4입니다. <br />
+                    따라서 한 명이 지우개를 4개씩 가질 수 있습니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>

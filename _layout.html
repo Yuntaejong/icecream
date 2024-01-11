@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrowcss/common.css" />
+    <script defer src="../../common_idigrowjs/jquery.min.js"></script>
+    <script defer src="../../common_idigrowjs/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrowjs/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrowjs/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrowjs/dragdrop.fix.js"></script>
+    <script defer src="../../common_idigrowjs/dragdrop.js"></script>
+    <script defer src="../../common_idigrowjs/line.js"></script>
+    <script defer src="../../common_idigrowjs/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <b>1</b>
+              <span>계산 결과를 찾아 이어 보세요.</span>
+            </h1>
+            <!-- 선택된 레벨에 <i class="active"><span class="sr-only">선택됨</span>레벨</i> 표시 -->
+            <div class="q-level q-level-1">
+              <i>1</i><i class="active"><span class="sr-only">선택됨</span>2</i><i>3</i><i>4</i>
+            </div>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <!-- 선긋기 -->
+                <div id="qLine" class="q-line q-line-test row align-items-center font-serif" data-target="#q-body">
+                  <input type="text" id="line_015_01" class="q-userline sr-only" />
+                  <ul class="col-auto">
+                    <li class="q-line-btn rt" data-group="1" data-no="1">
+                      <div class="q-line-box">541+120</div>
+                    </li>
+                    <li class="q-line-btn rt" data-group="1" data-no="2">
+                      <div class="q-line-box">341+135</div>
+                    </li>
+                    <li class="q-line-btn rt" data-group="1" data-no="3">
+                      <div class="q-line-box">615+134</div>
+                    </li>
+                  </ul>
+                  <ul class="col-auto">
+                    <li class="q-line-btn lt" data-group="2" data-no="1">
+                      <div class="q-line-box">749</div>
+                    </li>
+                    <li class="q-line-btn lt" data-group="2" data-no="2">
+                      <div class="q-line-box">476</div>
+                    </li>
+                    <li class="q-line-btn lt" data-group="2" data-no="3">
+                      <div class="q-line-box">661</div>
+                    </li>
+                  </ul>
+                </div>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 선긋기 콘트롤 버튼 -->
+              <div class="line-ctr">
+                <button type="button" id="btn-line-all" class="btn btn-primary btn-sm">모두 보기</button>
+                <button type="button" id="btn-line-only" class="btn btn-outline btn-sm">정답만 보기</button>
+                <button type="button" id="btn-line-my" class="btn btn-outline btn-sm">내 답만 보기</button>
+              </div>
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">세 자리 수의 덧셈은 같은 자리의 수끼리 더합니다.</div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse> 우선 이미지 </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    541+120=661, 341+135=476, 615+134=749입니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>

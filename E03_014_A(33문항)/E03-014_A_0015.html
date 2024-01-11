@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrow/css/common.css" />
+    <script defer src="../../common_idigrow/js/jquery.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <span>나눗셈식 45÷9=5를 다음과 같이 나타냈습니다. ㉠+㉡+㉢+㉣은 얼마인지 구해 보세요.</span>
+            </h1>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <!-- 단답유순 -->
+                <!-- tip : 드래그영역 -->
+                <div class="tip-box text-left">
+                  <ul class="list-dot">
+                    <li>45 나누기 ㉠은 5와 같습니다.</li>
+                    <li>㉡은 나누어지는 수입니다.</li>
+                    <li>㉢은 45를 ㉣로 나눈 몫입니다.</li>
+                  </ul>
+                </div>
+                <div class="q-box q-box-2 font-serif">
+                  <input type="text" placeholder data-answer="68" max-length="10" />
+                </div>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">
+                  나눗셈식 ○÷□=☆는 ‘○ 나누기 □는 ☆과 같습니다.’라고 읽을 수 있습니다. <br />
+                  이때 ○는 나누어지는 수, □는 나누는 수, ☆은 몫이라고 합니다.<br />
+                  45를 9로 나누면 몫이 5가 됩니다.
+                </div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse>
+                      <span class="font-serif">68</span>
+                    </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    나눗셈식 45÷9=5는 ‘45 나누기 9는 5와 같습니다.’라고 읽습니다.<br />
+                    이때 나누어지는 수는 45, 나누는 수는 9, 몫은 5입니다. <br />
+                    따라서 ㉠은 9, ㉡은 45, ㉢은 5, ㉣은 9이므로 ㉠+㉡+㉢+㉣=9+45+5+9=68입니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>

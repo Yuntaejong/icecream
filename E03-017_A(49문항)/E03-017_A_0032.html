@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrow/css/common.css" />
+    <script defer src="../../common_idigrow/js/jquery.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="multipleChoice">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <span>나눗셈식을 곱셈식으로 바르게 나타낸 것을 고르세요.</span>
+            </h1>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <div class="tip-box">48÷6=8</div>
+                <ul class="list-choice font-serif">
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>①</b> 6×6=36</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>②</b> 6×7=42 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" data-answer="" />
+                      <span> <b>③</b> 6×8=48 </span>
+                    </label>
+                  </li>
+                  <li class="split"></li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>④</b> 8×5=40 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>⑤</b> 8×4=32 </span>
+                    </label>
+                  </li>
+                </ul>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">
+                  곱셈식은 나눗셈식 2개로, 나눗셈식은 곱셈식 2개로 바꾸어 나타낼 수 있습니다. <br />
+                  □×△=○ ➜ ○÷□=△ 또는 ○÷△=□<br />
+                  ○÷□=△ ➜ □×△=○ 또는 △×□=○
+                </div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse>
+                      <span class="font-serif">③</span>
+                    </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    나눗셈식 48÷6=8을 곱셈식으로 나타내면 6×8=48 또는 8×6=48입니다.<br />
+                    따라서 나눗셈을 곱셈식으로 바르게 나타낸 것은 ③입니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>

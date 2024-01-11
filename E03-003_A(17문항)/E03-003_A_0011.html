@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrow/css/common.css" />
+    <script defer src="../../common_idigrow/js/jquery.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/dragdrop.fix.js"></script>
+    <script defer src="../../common_idigrow/js/dragdrop.js"></script>
+    <script defer src="../../common_idigrow/js/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <span>다음 중 가장 작은 수와 두 번째로 작은 수의 합을 구해 보세요.</span>
+            </h1>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <!-- 단답유순 -->
+                <!-- tip : 드래그영역 -->
+                <div class="tip-box font-serif">
+                  <div class="qexample">857</div>
+                  <div class="qexample">486</div>
+                  <div class="qexample">765</div>
+                  <div class="qexample">395</div>
+                </div>
+                <div class="q-box q-box-2 font-serif"><input type="text" placeholder data-answer="881" max-length="10" /></div>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">
+                  수의 크기를 비교하면 857＞765＞486＞395이므로 가장 작은 수와 두 번째로 작은 수를 찾아 더합니다. <br />
+                  이때 받아올림한 수를 빠뜨리지 않도록 주의하여 계산합니다.
+                </div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse>
+                      <span class="font-serif">881</span>
+                    </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    857＞765＞486＞395이므로 가장 작은 수는 395이고 두 번째로 작은 수는 486입니다. <br />
+                    따라서 가장 작은 수와 두 번째로 작은 수의 합은 395+486=881입니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>

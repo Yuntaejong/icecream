@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrow/css/common.css" />
+    <script defer src="../../common_idigrow/js/jquery.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="multipleChoice">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <span>나눗셈식으로 나타내었을 때 몫이 가장 작은 것을 고르세요.</span>
+            </h1>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <div class="tip-box">
+                  <ul class="list-choice text-left">
+                    <li>
+                      <label>
+                        <input type="radio" name="q" class="sr-only" />
+                        <span> <b class="font-serif">㉠</b> 48에서 6씩 8번 빼면 0이 됩니다.</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="q" class="sr-only" data-answer="" />
+                        <span> <b class="font-serif">㉡</b> 10에서 2씩 5번 빼면 0이 됩니다. </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="q" class="sr-only" />
+                        <span> <b class="font-serif">㉢</b> 35에서 5씩 7번 빼면 0이 됩니다. </span>
+                      </label>
+                    </li>
+                    <li class="split"></li>
+                    <li>
+                      <label>
+                        <input type="radio" name="q" class="sr-only" />
+                        <span> <b class="font-serif">㉣</b> 27에서 3씩 9번 빼면 0이 됩니다. </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">
+                  ○에서 ☐를 ☆번 빼면 0이 되는 것을 나눗셈식으로 나타내면 ○÷☐=☆입니다.<br />
+                  이때 ○는 나누어지는 수, □는 나누는 수, ☆은 몫입니다. <br />
+                  ☆이 가장 작은 수를 찾아 보세요.
+                </div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse>
+                      <span class="font-serif">㉡</span>
+                    </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    주어진 문장을 각각 나눗셈식으로 나타내어 보면 <br />
+                    ㉠ 48÷6=8, ㉡ 10÷2=5, ㉢ 35÷5=7, ㉣ 27÷3=9입니다. <br />
+                    따라서 몫이 가장 작은 것은 ㉡입니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrow/css/common.css" />
+    <script defer src="../../common_idigrow/js/jquery.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <span>나눗셈식을 곱셈식으로 나타냈을 때, ㉠, ㉡에 들어갈 두 수의 합을 구해 보세요.</span>
+            </h1>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <!-- 단답유순 -->
+                <!-- tip : 드래그영역 -->
+                <div class="tip-box font-serif">
+                  <div class="mb25">• 12÷4=3 <i class="icon icon-arrow-lg"></i> 3×㉠=12</div>
+                  <div>• 42÷6=7 <i class="icon icon-arrow-lg"></i> ㉡×6=42</div>
+                </div>
+                <div class="q-box q-box-2 font-serif">
+                  <input type="text" placeholder data-answer="11" max-length="100" />
+                </div>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">
+                  곱셈식과 나눗셈식으로, 나눗셈식은 곱셈식으로 바꾸어 나타낼 수 있습니다.<br />
+                  나눗셈식을 곱셈식으로 나타내어 ㉠, ㉡에 들어갈 수를 구한 다음 모두 더해 봅니다.
+                </div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse>
+                      <span class="font-serif">11</span>
+                    </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    ‧ 나눗셈식 12÷4=3은 곱셈식 3×4=12로 나타낼 수 있으므로 ㉠=4입니다.<br />
+                    ‧ 나눗셈식 42÷6=7은 곱셈식 7×6=42로 나타낼 수 있으므로 ㉡=7입니다.<br />
+                    따라서 ㉠, ㉡에 들어갈 두 수의 합은 4+7=11입니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>

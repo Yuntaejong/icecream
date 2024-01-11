@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=1570,height=890" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../common_idigrow/css/common.css" />
+    <script defer src="../../common_idigrow/js/jquery.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
+    <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/common.js"></script>
+    <!-- 페이지별 -->
+  </head>
+  <body>
+    <div id="wrap" class="" data-lesson="">
+      <!-- 학습도구 영역 -->
+      <div id="ctr"></div>
+
+      <main id="ct">
+        <!-- 페이지 시작 -->
+
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
+          <!-- 질문 -->
+          <header id="q-hd">
+            <h1>
+              <span>☐ 안에 알맞은 수를 써넣어 나눗셈식을 완성하고, 바르게 읽어 보세요.</span>
+            </h1>
+          </header>
+          <!-- 내용 -->
+          <div id="content">
+            <!-- 정답표시 -->
+            <div id="a-ox"><b>O</b><b>X</b></div>
+            <!-- 문항 영역 -->
+            <div id="q-body">
+              <itemBody>
+                <!-- 단답유순 -->
+                <!-- tip -->
+                <div class="tip-box">15개를 5묶음으로 똑같이 나누면 한 묶음에 3개씩 됩니다.</div>
+                <div class="q-box">
+                  <div><span>나눗셈식</span> 15÷5=<input type="text" placeholder data-answer="3" /></div>
+                  <div><span>읽기</span> 15 나누기 <input type="text" placeholder data-answer="5" />은/는 <input type="text" placeholder data-answer="3" />과 같습니다.</div>
+                </div>
+              </itemBody>
+            </div>
+            <!-- 답 영역 -->
+            <div id="a-wrap">
+              <!-- 도움말 -->
+              <section id="help">
+                <h2>도움말</h2>
+                <div id="help-body">
+                  ○개를 □묶음으로 똑같이 나누면 한 묶음에 ☆개씩이 되는 것을 나눗셈식으로 나타내면 ○÷□=☆입니다.<br />
+                  ○÷□=☆는 ‘○ 나누기 □는 ☆과 같습니다.’라고 읽습니다.
+                </div>
+              </section>
+              <div class="a-box">
+                <!-- 정답 -->
+                <section id="a">
+                  <h2>정답</h2>
+                  <div id="a-body">
+                    <correctResponse>
+                      <span class="font-serif">3, 5, 3</span>
+                    </correctResponse>
+                  </div>
+                </section>
+
+                <!-- 해설 -->
+                <section id="comment">
+                  <h2>해설</h2>
+                  <div id="comment-body">
+                    보기의 문장을 나눗셈식으로 나타내면 15÷5=3이고, ‘15 나누기 5는 3과 같습니다.’라고 읽습니다.<br />
+                    따라서 빈칸에 들어갈 알맞은 수는 3, 5, 3입니다.<br />
+                    <br />
+                    <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </assessmentItem>
+
+        <!-- 네비게이션 영역 -->
+        <footer id="ft"></footer>
+        <!-- 페이지 끝 -->
+      </main>
+    </div>
+  </body>
+</html>
