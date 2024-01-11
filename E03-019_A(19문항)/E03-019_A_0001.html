@@ -20,11 +20,11 @@
       <main id="ct">
         <!-- 페이지 시작 -->
 
-        <assessmentItem data-qid="" data-response-type="trueFalse">
+        <assessmentItem data-qid="" data-response-type="multipleChoice">
           <!-- 질문 -->
           <header id="q-hd">
             <h1>
-              <span>계산 결과가 더 작은 것을 찾아 기호를 고르세요.</span>
+              <span>42÷6의 몫을 구할 때 필요한 곱셈구구를 고르세요.</span>
             </h1>
           </header>
           <!-- 내용 -->
@@ -34,23 +34,39 @@
             <!-- 문항 영역 -->
             <div id="q-body">
               <itemBody>
-                <!-- 다자택일 -->
-                <div class="tip-box">
-                  <ul class="list-choice font-serif m-0 d-flex justify-content-center" style="gap: 40px">
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" />
-                        <span> <b>㉠</b> 787-434 </span>
-                      </label>
-                    </li>
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" data-answer="" />
-                        <span> <b>㉡</b> 647-312 </span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="list-choice font-serif">
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>①</b> 2단 곱셈구구 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>②</b> 3단 곱셈구구 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>③</b> 4단 곱셈구구 </span>
+                    </label>
+                  </li>
+                  <li class="split"></li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>④</b> 5단 곱셈구구 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" data-answer="" />
+                      <span> <b>⑤</b> 6단 곱셈구구 </span>
+                    </label>
+                  </li>
+                </ul>
               </itemBody>
             </div>
             <!-- 답 영역 -->
@@ -58,14 +74,19 @@
               <!-- 도움말 -->
               <section id="help">
                 <h2>도움말</h2>
-                <div id="help-body">㉠, ㉡을 각각 계산한 다음, 크기를 비교해 봅니다. 세 자리 수의 뺄셈은 각 자리의 수를 맞추어 같은 자리의 수끼리 뺍니다.</div>
+                <div id="help-body">
+                  ○÷□의 몫을 구할 때는 □단 곱셈구구에서 곱이 ○인 곱셈식을 찾아봅니다. <br />
+                  42÷6의 몫은 몇 단 곱셈구구로 구할 수 있나요?
+                </div>
               </section>
               <div class="a-box">
                 <!-- 정답 -->
                 <section id="a">
                   <h2>정답</h2>
                   <div id="a-body">
-                    <correctResponse> ㉡ </correctResponse>
+                    <correctResponse>
+                      <span class="font-serif">⑤</span>
+                    </correctResponse>
                   </div>
                 </section>
 
@@ -73,9 +94,8 @@
                 <section id="comment">
                   <h2>해설</h2>
                   <div id="comment-body">
-                    ㉠ 787-434=353 <br />
-                    ㉡ 647-312=335<br />
-                    따라서 계산 결과가 더 작은 것은 ㉡입니다.<br />
+                    42÷6의 몫을 구하려면 6단 곱셈구구에서 곱이 42인 곱셈식을 찾아야 합니다.<br />
+                    ➜ 6×7=42<br />
                     <br />
                     <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
                   </div>

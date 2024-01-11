@@ -20,11 +20,11 @@
       <main id="ct">
         <!-- 페이지 시작 -->
 
-        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
+        <assessmentItem data-qid="" data-response-type="multipleChoice">
           <!-- 질문 -->
           <header id="q-hd">
             <h1>
-              <span>다음은 곱셈식을 나눗셈식으로 나타낸 것입니다. □ 안에 알맞은 수를 써넣으세요. </span>
+              <span>1부터 9까지의 수 중에서 □ 안에 들어갈 수 있는 수를 바르게 짝지은 것을 고르세요.</span>
             </h1>
           </header>
           <!-- 내용 -->
@@ -34,12 +34,40 @@
             <!-- 문항 영역 -->
             <div id="q-body">
               <itemBody>
-                <!-- 단답유순 -->
-                <!-- tip -->
-                <div class="tip-box text-left">
-                  <div class="mb25">곱셈식: 8×4=32</div>
-                  <div>나눗셈식: 32÷4=<input type="text" placeholder data-answer="8" max-length="100" />, 32÷8=<input type="text" placeholder data-answer="4" max-length="100" /></div>
-                </div>
+                <div class="tip-box font-serif">36÷9 ＜ □ ＜ 56÷7</div>
+                <ul class="list-choice font-serif">
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>①</b> 2, 3, 4 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>②</b> 3, 4, 5 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>③</b> 4, 5, 6, 7 </span>
+                    </label>
+                  </li>
+                  <li class="split"></li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" data-answer="" />
+                      <span> <b>④</b> 5, 6, 7 </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" name="q" class="sr-only" />
+                      <span> <b>⑤</b> 6, 7, 8, 9 </span>
+                    </label>
+                  </li>
+                </ul>
               </itemBody>
             </div>
             <!-- 답 영역 -->
@@ -48,9 +76,10 @@
               <section id="help">
                 <h2>도움말</h2>
                 <div id="help-body">
-                  곱셈식은 나눗셈식 2개로, 나눗셈식은 곱셈식 2개로 바꾸어 나타낼 수 있습니다. <br />
-                  □×△=○ ➜ ○÷□=△ 또는 ○÷△=□<br />
-                  ○÷□=△ ➜ □×△=○ 또는 △×□=○
+                  먼저 나눗셈 36÷9와 56÷7의 몫을 각각 구해 봅니다. <br />
+                  36÷9의 몫을 곱셈식으로 구해 보세요.<br />
+                  56÷7의 몫을 곱셈식으로 구해 보세요.<br />
+                  1부터 9까지의 수 중 나눗셈 36÷9의 몫보다 크고, 56÷7의 몫보다 작은 수를 찾아봅니다.
                 </div>
               </section>
               <div class="a-box">
@@ -59,7 +88,7 @@
                   <h2>정답</h2>
                   <div id="a-body">
                     <correctResponse>
-                      <span class="font-serif">8, 4</span>
+                      <span class="font-serif">④</span>
                     </correctResponse>
                   </div>
                 </section>
@@ -68,8 +97,9 @@
                 <section id="comment">
                   <h2>해설</h2>
                   <div id="comment-body">
-                    곱셈식 8×4=32을 나눗셈식으로 나타내면 32÷4=8 또는 32÷8=4입니다.<br />
-                    따라서 □ 안에 알맞은 수는 8, 4입니다.<br />
+                    9×4=39에서 36÷9=4이므로 몫은 4이고, 7×8=56에서 56÷7=8이므로 몫은 8입니다. <br />
+                    1부터 9까지의 수 중에서 4보다 크고 8보다 작은 수는 5, 6, 7입니다.<br />
+                    따라서 □ 안에 알맞은 수는 ④ 5, 6, 7입니다.<br />
                     <br />
                     <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
                   </div>

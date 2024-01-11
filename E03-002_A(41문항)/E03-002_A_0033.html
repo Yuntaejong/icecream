@@ -9,8 +9,18 @@
     <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
     <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
     <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/dragdrop.fix.js"></script>
+    <script defer src="../../common_idigrow/js/dragdrop.js"></script>
     <script defer src="../../common_idigrow/js/common.js"></script>
     <!-- 페이지별 -->
+    <style>
+      .tip-box {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 40px;
+      }
+    </style>
   </head>
   <body>
     <div id="wrap" class="" data-lesson="">
@@ -20,11 +30,11 @@
       <main id="ct">
         <!-- 페이지 시작 -->
 
-        <assessmentItem data-qid="" data-response-type="trueFalse">
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
           <!-- 질문 -->
           <header id="q-hd">
             <h1>
-              <span>계산 결과가 더 작은 것을 찾아 기호를 고르세요.</span>
+              <span>다음 중 두 수를 골라 합이 가장 작게 나오도록 덧셈식을 만들었다고 합니다. 만든 덧셈식의 합을 구해 보세요.</span>
             </h1>
           </header>
           <!-- 내용 -->
@@ -34,23 +44,15 @@
             <!-- 문항 영역 -->
             <div id="q-body">
               <itemBody>
-                <!-- 다자택일 -->
-                <div class="tip-box">
-                  <ul class="list-choice font-serif m-0 d-flex justify-content-center" style="gap: 40px">
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" />
-                        <span> <b>㉠</b> 787-434 </span>
-                      </label>
-                    </li>
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" data-answer="" />
-                        <span> <b>㉡</b> 647-312 </span>
-                      </label>
-                    </li>
-                  </ul>
+                <!-- 단답유순 -->
+                <!-- tip : 드래그영역 -->
+                <div class="tip-box font-serif">
+                  <div class="qexample">826</div>
+                  <div class="qexample">618</div>
+                  <div class="qexample">428</div>
+                  <div class="qexample">253</div>
                 </div>
+                <div class="q-box q-box-2 font-serif"><input type="text" placeholder data-answer="681" max-length="10" /></div>
               </itemBody>
             </div>
             <!-- 답 영역 -->
@@ -58,14 +60,19 @@
               <!-- 도움말 -->
               <section id="help">
                 <h2>도움말</h2>
-                <div id="help-body">㉠, ㉡을 각각 계산한 다음, 크기를 비교해 봅니다. 세 자리 수의 뺄셈은 각 자리의 수를 맞추어 같은 자리의 수끼리 뺍니다.</div>
+                <div id="help-body">
+                  두 수의 합이 가장 작게 나오려면 가장 작은 수와 두 번째로 작은 수를 더해야 합니다. <br />
+                  이때 받아올림한 수를 빠뜨리지 않도록 주의하여 계산합니다.
+                </div>
               </section>
               <div class="a-box">
                 <!-- 정답 -->
                 <section id="a">
                   <h2>정답</h2>
                   <div id="a-body">
-                    <correctResponse> ㉡ </correctResponse>
+                    <correctResponse>
+                      <span class="font-serif">681</span>
+                    </correctResponse>
                   </div>
                 </section>
 
@@ -73,9 +80,8 @@
                 <section id="comment">
                   <h2>해설</h2>
                   <div id="comment-body">
-                    ㉠ 787-434=353 <br />
-                    ㉡ 647-312=335<br />
-                    따라서 계산 결과가 더 작은 것은 ㉡입니다.<br />
+                    두 수의 합이 가장 작게 나오려면 가장 작은 수와 두 번째로 작은 수를 더해야 합니다.<br />
+                    253＜428＜618＜826이므로 가장 작은 수는 253이고, 두 번째로 작은 수는 428입니다. <br />따라서 253+428=681입니다.<br />
                     <br />
                     <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
                   </div>
