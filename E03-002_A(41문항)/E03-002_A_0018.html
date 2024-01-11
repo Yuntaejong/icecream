@@ -9,6 +9,8 @@
     <script defer src="../../common_idigrow/js/jquery-ui.min.js"></script>
     <script defer src="../../common_idigrow/js/jquery.ui.touch-punch.min.js"></script>
     <script defer src="../../common_idigrow/js/bootstrap.min.js"></script>
+    <script defer src="../../common_idigrow/js/dragdrop.fix.js"></script>
+    <script defer src="../../common_idigrow/js/dragdrop.js"></script>
     <script defer src="../../common_idigrow/js/common.js"></script>
     <!-- 페이지별 -->
   </head>
@@ -20,11 +22,11 @@
       <main id="ct">
         <!-- 페이지 시작 -->
 
-        <assessmentItem data-qid="" data-response-type="trueFalse">
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
           <!-- 질문 -->
           <header id="q-hd">
             <h1>
-              <span>계산 결과가 더 작은 것을 찾아 기호를 고르세요.</span>
+              <span>다음 중 홀수의 합은 얼마인지 구해 보세요.</span>
             </h1>
           </header>
           <!-- 내용 -->
@@ -34,23 +36,10 @@
             <!-- 문항 영역 -->
             <div id="q-body">
               <itemBody>
-                <!-- 다자택일 -->
-                <div class="tip-box">
-                  <ul class="list-choice font-serif m-0 d-flex justify-content-center" style="gap: 40px">
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" />
-                        <span> <b>㉠</b> 787-434 </span>
-                      </label>
-                    </li>
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" data-answer="" />
-                        <span> <b>㉡</b> 647-312 </span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
+                <!-- 단답유순 -->
+                <!-- tip : 드래그영역 -->
+                <div class="tip-box font-serif d-flex justify-content-center" style="gap: 40px"><span>551</span><span>483</span><span>355</span><span>472</span><span>264</span></div>
+                <div class="q-box font-serif"><input type="text" placeholder data-answer="815" max-length="10" /></div>
               </itemBody>
             </div>
             <!-- 답 영역 -->
@@ -58,14 +47,16 @@
               <!-- 도움말 -->
               <section id="help">
                 <h2>도움말</h2>
-                <div id="help-body">㉠, ㉡을 각각 계산한 다음, 크기를 비교해 봅니다. 세 자리 수의 뺄셈은 각 자리의 수를 맞추어 같은 자리의 수끼리 뺍니다.</div>
+                <div id="help-body">세 자리 수의 크기는 백의 자리, 십의 자리, 일의 자리 순서로 비교하고, 높은 자리 숫자가 클수록 큰 수입니다.</div>
               </section>
               <div class="a-box">
                 <!-- 정답 -->
                 <section id="a">
                   <h2>정답</h2>
                   <div id="a-body">
-                    <correctResponse> ㉡ </correctResponse>
+                    <correctResponse>
+                      <span class="font-serif">815</span>
+                    </correctResponse>
                   </div>
                 </section>
 
@@ -73,9 +64,8 @@
                 <section id="comment">
                   <h2>해설</h2>
                   <div id="comment-body">
-                    ㉠ 787-434=353 <br />
-                    ㉡ 647-312=335<br />
-                    따라서 계산 결과가 더 작은 것은 ㉡입니다.<br />
+                    가장 큰 수는 551, 가장 작은 수는 264입니다.<br />
+                    따라서 두 수의 합은 551+264=815입니다.<br />
                     <br />
                     <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
                   </div>

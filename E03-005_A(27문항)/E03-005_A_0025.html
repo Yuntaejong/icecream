@@ -20,11 +20,11 @@
       <main id="ct">
         <!-- 페이지 시작 -->
 
-        <assessmentItem data-qid="" data-response-type="trueFalse">
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
           <!-- 질문 -->
           <header id="q-hd">
             <h1>
-              <span>계산 결과가 더 작은 것을 찾아 기호를 고르세요.</span>
+              <span>빈칸에 알맞은 수를 써넣으세요.</span>
             </h1>
           </header>
           <!-- 내용 -->
@@ -34,22 +34,16 @@
             <!-- 문항 영역 -->
             <div id="q-body">
               <itemBody>
-                <!-- 다자택일 -->
-                <div class="tip-box">
-                  <ul class="list-choice font-serif m-0 d-flex justify-content-center" style="gap: 40px">
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" />
-                        <span> <b>㉠</b> 787-434 </span>
-                      </label>
-                    </li>
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" data-answer="" />
-                        <span> <b>㉡</b> 647-312 </span>
-                      </label>
-                    </li>
-                  </ul>
+                <!-- 단답유순 -->
+                <!-- tip -->
+                <div class="tip-box" style="line-height: 2">
+                  <div>6-4=<input type="text" placeholder data-answer="2" /></div>
+                  <div>70-50=<input type="text" placeholder data-answer="20" /></div>
+                  <div>300-100=<input type="text" placeholder data-answer="200" /></div>
+                  <div>
+                    <i class="icon icon-arrow-lg"></i>
+                    376-154=<input type="text" placeholder data-answer="222" />
+                  </div>
                 </div>
               </itemBody>
             </div>
@@ -58,14 +52,21 @@
               <!-- 도움말 -->
               <section id="help">
                 <h2>도움말</h2>
-                <div id="help-body">㉠, ㉡을 각각 계산한 다음, 크기를 비교해 봅니다. 세 자리 수의 뺄셈은 각 자리의 수를 맞추어 같은 자리의 수끼리 뺍니다.</div>
+                <div id="help-body">
+                  받아내림이 없는 세 자리 수의 뺄셈을 계산하는 여러 가지 방법 중 일의 자리부터 계산하는 방법입니다. <br />
+                  일의 자리 수 6-4를 계산해 보세요.<br />
+                  십의 자리 수 70-50을 계산해 보세요.<br />
+                  백의 자리 수 300-100을 계산해 보세요.
+                </div>
               </section>
               <div class="a-box">
                 <!-- 정답 -->
                 <section id="a">
                   <h2>정답</h2>
                   <div id="a-body">
-                    <correctResponse> ㉡ </correctResponse>
+                    <correctResponse>
+                      <span class="font-serif">2, 20, 200, 222</span>
+                    </correctResponse>
                   </div>
                 </section>
 
@@ -73,9 +74,8 @@
                 <section id="comment">
                   <h2>해설</h2>
                   <div id="comment-body">
-                    ㉠ 787-434=353 <br />
-                    ㉡ 647-312=335<br />
-                    따라서 계산 결과가 더 작은 것은 ㉡입니다.<br />
+                    일의 자리부터 빼는 방법입니다. <br />
+                    6-4=2, 70-50=20, 300-100=200이므로 2+20+200=222입니다.<br />
                     <br />
                     <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
                   </div>

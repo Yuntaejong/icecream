@@ -20,11 +20,11 @@
       <main id="ct">
         <!-- 페이지 시작 -->
 
-        <assessmentItem data-qid="" data-response-type="trueFalse">
+        <assessmentItem data-qid="" data-response-type="fillInTheBlank">
           <!-- 질문 -->
           <header id="q-hd">
             <h1>
-              <span>계산 결과가 더 작은 것을 찾아 기호를 고르세요.</span>
+              <span>1부터 9까지의 수 중에서 □ 안에 들어갈 수 있는 수 중 가장 작은 수를 구해 보세요.</span>
             </h1>
           </header>
           <!-- 내용 -->
@@ -34,23 +34,10 @@
             <!-- 문항 영역 -->
             <div id="q-body">
               <itemBody>
-                <!-- 다자택일 -->
-                <div class="tip-box">
-                  <ul class="list-choice font-serif m-0 d-flex justify-content-center" style="gap: 40px">
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" />
-                        <span> <b>㉠</b> 787-434 </span>
-                      </label>
-                    </li>
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" data-answer="" />
-                        <span> <b>㉡</b> 647-312 </span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
+                <!-- 단답유순 -->
+                <!-- tip : 드래그영역 -->
+                <div class="tip-box">28÷7 ＜ □</div>
+                <div class="q-box q-box-2 font-serif"><input type="text" placeholder data-answer="5" max-length="100" /></div>
               </itemBody>
             </div>
             <!-- 답 영역 -->
@@ -58,14 +45,19 @@
               <!-- 도움말 -->
               <section id="help">
                 <h2>도움말</h2>
-                <div id="help-body">㉠, ㉡을 각각 계산한 다음, 크기를 비교해 봅니다. 세 자리 수의 뺄셈은 각 자리의 수를 맞추어 같은 자리의 수끼리 뺍니다.</div>
+                <div id="help-body">
+                  나눗셈 28÷7의 몫을 곱셈식으로 구해 보세요. <br />
+                  몫을 구한 다음 1부터 9까지의 수 중 몫보다 큰 수를 찾아봅니다.
+                </div>
               </section>
               <div class="a-box">
                 <!-- 정답 -->
                 <section id="a">
                   <h2>정답</h2>
                   <div id="a-body">
-                    <correctResponse> ㉡ </correctResponse>
+                    <correctResponse>
+                      <span class="font-serif">5</span>
+                    </correctResponse>
                   </div>
                 </section>
 
@@ -73,9 +65,8 @@
                 <section id="comment">
                   <h2>해설</h2>
                   <div id="comment-body">
-                    ㉠ 787-434=353 <br />
-                    ㉡ 647-312=335<br />
-                    따라서 계산 결과가 더 작은 것은 ㉡입니다.<br />
+                    7×4=28에서 28÷7=4이므로 몫은 4입니다. <br />
+                    따라서 1부터 9까지의 수 중에서 □ 안에 들어갈 수 있는 수는 5, 6, 7, 8이므로 가장 작은 수는 5입니다.<br />
                     <br />
                     <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
                   </div>

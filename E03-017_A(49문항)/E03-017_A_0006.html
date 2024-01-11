@@ -24,7 +24,7 @@
           <!-- 질문 -->
           <header id="q-hd">
             <h1>
-              <span>계산 결과가 더 작은 것을 찾아 기호를 고르세요.</span>
+              <span>곱셈식 7×4=28을 나눗셈식으로 바르게 나타낸 것을 고르세요.</span>
             </h1>
           </header>
           <!-- 내용 -->
@@ -34,19 +34,24 @@
             <!-- 문항 영역 -->
             <div id="q-body">
               <itemBody>
-                <!-- 다자택일 -->
                 <div class="tip-box">
-                  <ul class="list-choice font-serif m-0 d-flex justify-content-center" style="gap: 40px">
-                    <li class="m-0">
-                      <label>
-                        <input type="radio" name="q" class="sr-only" />
-                        <span> <b>㉠</b> 787-434 </span>
-                      </label>
-                    </li>
-                    <li class="m-0">
+                  <ul class="list-choice font-serif d-flex justify-content-center m-0" style="gap: 40px">
+                    <li>
                       <label>
                         <input type="radio" name="q" class="sr-only" data-answer="" />
-                        <span> <b>㉡</b> 647-312 </span>
+                        <span> <b>㉠</b> 28÷7=4</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="q" class="sr-only" />
+                        <span> <b>㉡</b> 28÷4=6 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="q" class="sr-only" />
+                        <span> <b>㉢</b> 4÷7=28 </span>
                       </label>
                     </li>
                   </ul>
@@ -58,14 +63,20 @@
               <!-- 도움말 -->
               <section id="help">
                 <h2>도움말</h2>
-                <div id="help-body">㉠, ㉡을 각각 계산한 다음, 크기를 비교해 봅니다. 세 자리 수의 뺄셈은 각 자리의 수를 맞추어 같은 자리의 수끼리 뺍니다.</div>
+                <div id="help-body">
+                  곱셈식은 나눗셈식 2개로, 나눗셈식은 곱셈식 2개로 바꾸어 나타낼 수 있습니다.<br />
+                  □×△=○ ➜ ○÷□=△ 또는 ○÷△=□<br />
+                  ○÷□=△ ➜ □×△=○ 또는 △×□=○
+                </div>
               </section>
               <div class="a-box">
                 <!-- 정답 -->
                 <section id="a">
                   <h2>정답</h2>
                   <div id="a-body">
-                    <correctResponse> ㉡ </correctResponse>
+                    <correctResponse>
+                      <span class="font-serif">㉠</span>
+                    </correctResponse>
                   </div>
                 </section>
 
@@ -73,9 +84,7 @@
                 <section id="comment">
                   <h2>해설</h2>
                   <div id="comment-body">
-                    ㉠ 787-434=353 <br />
-                    ㉡ 647-312=335<br />
-                    따라서 계산 결과가 더 작은 것은 ㉡입니다.<br />
+                    곱셈식 7×4=28을 나눗셈식으로 나타내면 28÷7=4 또는 28÷4=7입니다.<br />
                     <br />
                     <a class="btn btn-primary btn-sm" href="#">해설 영상 보기 <i class="icon icon-video"></i></a>
                   </div>
